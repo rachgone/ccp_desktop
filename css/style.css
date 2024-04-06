@@ -1,0 +1,334 @@
+h1 {
+    font-size: 36px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10%;
+    text-shadow: 2px 2px 4px gray;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(90, 4, 46);
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    background-color: #e5d0e5;
+}
+
+h4 {
+    font-size: 16px;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+}
+
+p {
+    font-size: 14px;
+    font-family: Rubik, Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: normal;
+    line-height: 1.5em;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(128, 0, 128, 0.3);
+}
+
+img {
+    border: solid 2px black;
+    padding: 3px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 1px 1px 3px 1px #949090;
+}
+
+li {
+    font-family: rubik, Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    font-size: 14px;
+}
+
+nav {
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #833683, plum, white);
+}
+
+.nav li {
+    display: grid;
+    padding: 5px;
+    font-size: 1.3em;
+    font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+li.active a {
+    background-color: purple;
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
+li a:hover {
+    background-color: orchid;
+    font-weight: bold;
+}
+
+.skip-to-main-content-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 20%;
+    text-decoration: underline;
+}
+
+.skip-to-main-content-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border: 2px dashed purple;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+main {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+body {
+    background-image: url(../images/dotted_wallpaper.png);
+}
+
+div.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    border: 2px dashed purple;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.steps {
+    list-style: decimal;
+    padding: 10px;
+}
+
+.nonsteps {
+    list-style: disc;
+    padding: 10px;
+}
+
+button {
+    background-color: #52026e;
+    font-family: poppins, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 0px 0px 50px;
+}
+
+button:hover {
+    background-color: #833683;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    .gif {
+        display: none;
+    }
+}
+
+@media (min-width: 810px) {
+    .nav li {
+        display: inline-block;
+        padding: 20px 40px 20px 40px;
+    }
+
+    .nav {
+        overflow: hidden;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-image: linear-gradient(to bottom, #833683, plum, white);
+    }
+
+    nav {
+        padding: 0 0 20px 0;
+    }
+
+    .nav a {
+        /* float: center; */
+        display: block;
+        color: #090909;
+        text-align: center;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+        border: 3px rgb(0, 0, 0) solid;
+    }
+
+    .nav a:hover {
+        background: plum;
+        color: black;
+    }
+
+    ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+        overflow: hidden;
+        background-color: #ffffffc7;
+    }
+
+    .main {
+        padding: 16px;
+        margin-top: 30px;
+        height: 1500px;
+    }
+
+    main {
+        margin: 50px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    img:hover {
+        transform: scaleX(-1);
+    }
+
+    p {
+        animation: typing 0s steps(22), blink .5s step-end infinite alternate;
+    }
+
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .gallery {
+        transform: perspective(900px) rotateX(20deg);
+    }
+
+}
+
+@media (min-width: 1280px) {
+    li {
+        font-family: rubik, Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .nav li {
+        float: left;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    .cursor {
+        width: 20px;
+        height: 20px;
+        background-color: #52026e;
+        /* Change to desired cursor color */
+        border-radius: 50%;
+        position: absolute;
+        pointer-events: none;
+        animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    div.photo-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        border: 2px dashed purple;
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+    }
+
+    img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+}
