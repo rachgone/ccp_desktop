@@ -139,6 +139,7 @@ div.photo-gallery {
     grid-gap: 20px;
     justify-content: center;
     justify-items: center;
+    align-items: stretch;
     align-content: center;
     border: 2px dashed purple;
     padding: 10px 10px 10px 10px;
@@ -272,9 +273,22 @@ button:hover {
         transform: perspective(900px) rotateX(20deg);
     }
 
+    div.photo-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: center;
+        justify-items: center;
+        align-items: stretch;
+        align-content: center;
+        border: 2px dashed purple;
+        padding: 10px 10px 10px 10px;
+        border-radius: 20px;
+    }
+
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     li {
         font-family: rubik, Verdana, Geneva, Tahoma, sans-serif;
         padding: 5px;
@@ -315,11 +329,11 @@ button:hover {
 
     div.photo-gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
         justify-content: center;
         justify-items: center;
-        align-content: center;
+        align-items: stretch;
         border: 2px dashed purple;
         padding: 10px 10px 10px 10px;
         border-radius: 20px;
